@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name controlBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/controlBoard-rescue.lib)(options "")(descr ""))
+)
