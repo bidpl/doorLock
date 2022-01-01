@@ -227,8 +227,6 @@ SDA
 Text Label 4850 4000 0    50   ~ 0
 SCL
 Wire Wire Line
-	4800 3100 5050 3100
-Wire Wire Line
 	4800 3000 5050 3000
 Wire Wire Line
 	4800 2900 5050 2900
@@ -279,13 +277,9 @@ F 3 "" H 7700 2600 50  0001 C CNN
 	1    7700 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 3000 6800 3000
-Wire Wire Line
-	7000 3100 6800 3100
-Text Label 6800 3000 0    50   ~ 0
+Text Label 6400 3000 0    50   ~ 0
 SCL
-Text Label 6800 3100 0    50   ~ 0
+Text Label 6400 3100 0    50   ~ 0
 SDA
 Wire Wire Line
 	7700 2600 7700 2650
@@ -365,17 +359,6 @@ F 3 "" H 1050 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controlBoard-rescue:Barrel_Jack_Switch_MountingPin-Connector J4
-U 1 1 618E34A5
-P 1300 1150
-F 0 "J4" H 1357 1467 50  0000 C CNN
-F 1 "Barrel_Jack_Switch_MountingPin" H 1357 1376 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1350 1110 50  0001 C CNN
-F 3 "~" H 1350 1110 50  0001 C CNN
-	1    1300 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L controlBoard-rescue:Conn_02x03_Odd_Even-Connector_Generic J5
 U 1 1 618EA8EC
 P 2450 2300
@@ -389,40 +372,36 @@ $EndComp
 $Comp
 L controlBoard-rescue:Conn_01x03-Connector_Generic J2
 U 1 1 618ECDBF
-P 1050 3300
-F 0 "J2" H 968 3617 50  0000 C CNN
-F 1 "Servo" H 968 3526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1050 3300 50  0001 C CNN
-F 3 "~" H 1050 3300 50  0001 C CNN
-	1    1050 3300
+P 1000 3400
+F 0 "J2" H 918 3717 50  0000 C CNN
+F 1 "Servo" H 918 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1000 3400 50  0001 C CNN
+F 3 "~" H 1000 3400 50  0001 C CNN
+	1    1000 3400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L controlBoard-rescue:GND-power #PWR011
 U 1 1 618F500B
-P 1850 1500
-F 0 "#PWR011" H 1850 1250 50  0001 C CNN
-F 1 "GND" H 1855 1327 50  0000 C CNN
-F 2 "" H 1850 1500 50  0001 C CNN
-F 3 "" H 1850 1500 50  0001 C CNN
-	1    1850 1500
+P 1750 1800
+F 0 "#PWR011" H 1750 1550 50  0001 C CNN
+F 1 "GND" H 1755 1627 50  0000 C CNN
+F 2 "" H 1750 1800 50  0001 C CNN
+F 3 "" H 1750 1800 50  0001 C CNN
+	1    1750 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 1250 1850 1250
 $Comp
 L controlBoard-rescue:+5V-power #PWR012
 U 1 1 619089DF
-P 2000 1000
-F 0 "#PWR012" H 2000 850 50  0001 C CNN
-F 1 "+5V" H 2015 1173 50  0000 C CNN
-F 2 "" H 2000 1000 50  0001 C CNN
-F 3 "" H 2000 1000 50  0001 C CNN
-	1    2000 1000
+P 2450 850
+F 0 "#PWR012" H 2450 700 50  0001 C CNN
+F 1 "+5V" H 2465 1023 50  0000 C CNN
+F 2 "" H 2450 850 50  0001 C CNN
+F 3 "" H 2450 850 50  0001 C CNN
+	1    2450 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 1050 2000 1000
 $Comp
 L controlBoard-rescue:+5V-power #PWR013
 U 1 1 6192E22C
@@ -470,102 +449,38 @@ SCK
 Text Label 2050 2400 0    50   ~ 0
 RESET
 Wire Wire Line
-	1250 3200 1600 3200
+	1200 3300 1300 3300
 $Comp
 L controlBoard-rescue:GND-power #PWR04
 U 1 1 61955E60
-P 1300 3450
-F 0 "#PWR04" H 1300 3200 50  0001 C CNN
-F 1 "GND" H 1305 3277 50  0000 C CNN
-F 2 "" H 1300 3450 50  0001 C CNN
-F 3 "" H 1300 3450 50  0001 C CNN
-	1    1300 3450
+P 1250 3550
+F 0 "#PWR04" H 1250 3300 50  0001 C CNN
+F 1 "GND" H 1255 3377 50  0000 C CNN
+F 2 "" H 1250 3550 50  0001 C CNN
+F 3 "" H 1250 3550 50  0001 C CNN
+	1    1250 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 3400 1300 3400
+	1200 3500 1250 3500
 Wire Wire Line
-	1300 3400 1300 3450
-$Comp
-L controlBoard-rescue:+5V-power #PWR010
-U 1 1 61959E6E
-P 1750 3250
-F 0 "#PWR010" H 1750 3100 50  0001 C CNN
-F 1 "+5V" H 1765 3423 50  0000 C CNN
-F 2 "" H 1750 3250 50  0001 C CNN
-F 3 "" H 1750 3250 50  0001 C CNN
-	1    1750 3250
-	1    0    0    -1  
-$EndComp
+	1250 3500 1250 3550
 Wire Wire Line
-	1250 3300 1750 3300
-Wire Wire Line
-	1750 3300 1750 3250
-Text Label 1400 3200 0    50   ~ 0
+	1200 3400 1700 3400
+Text Label 1350 3300 0    50   ~ 0
 PWM0
 Wire Wire Line
 	8400 3000 8650 3000
 Text Label 8450 3000 0    50   ~ 0
 PWM0
-$Comp
-L controlBoard-rescue:Conn_01x06-Connector_Generic J3
-U 1 1 61962843
-P 1050 4200
-F 0 "J3" H 968 4617 50  0000 C CNN
-F 1 "Fingerprint" H 968 4526 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 1050 4200 50  0001 C CNN
-F 3 "~" H 1050 4200 50  0001 C CNN
-	1    1050 4200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 4400 1400 4400
-Wire Wire Line
-	1250 4300 1400 4300
-Wire Wire Line
-	1250 4200 1400 4200
-Wire Wire Line
-	1400 4200 1400 4150
-Wire Wire Line
-	1250 4500 1400 4500
-Wire Wire Line
-	1400 4500 1400 4550
-$Comp
-L controlBoard-rescue:GND-power #PWR06
-U 1 1 6197312B
-P 1400 4550
-F 0 "#PWR06" H 1400 4300 50  0001 C CNN
-F 1 "GND" H 1405 4377 50  0000 C CNN
-F 2 "" H 1400 4550 50  0001 C CNN
-F 3 "" H 1400 4550 50  0001 C CNN
-	1    1400 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L controlBoard-rescue:+5V-power #PWR05
-U 1 1 61973A8E
-P 1400 4150
-F 0 "#PWR05" H 1400 4000 50  0001 C CNN
-F 1 "+5V" H 1415 4323 50  0000 C CNN
-F 2 "" H 1400 4150 50  0001 C CNN
-F 3 "" H 1400 4150 50  0001 C CNN
-	1    1400 4150
-	1    0    0    -1  
-$EndComp
-Text Label 1250 4400 0    50   ~ 0
-RX1
-Text Label 1250 4300 0    50   ~ 0
-TX1
-NoConn ~ 1250 4100
-NoConn ~ 1250 4000
 Wire Wire Line
 	4800 4500 5000 4500
 Wire Wire Line
 	4800 4600 5000 4600
 Text Label 4850 4500 0    50   ~ 0
-RX1
-Text Label 4850 4600 0    50   ~ 0
 TX1
+Text Label 4850 4600 0    50   ~ 0
+RX1
 $Comp
 L controlBoard-rescue:GND-power #PWR03
 U 1 1 6199143D
@@ -617,7 +532,7 @@ F 3 "~" H 7950 2650 50  0001 C CNN
 	1    7950 2650
 	0    1    1    0   
 $EndComp
-NoConn ~ 1600 1150
+NoConn ~ 1550 1500
 Text Label 4850 3200 0    50   ~ 0
 XTAL+
 Text Label 4850 3300 0    50   ~ 0
@@ -634,10 +549,6 @@ Text Label 4950 4700 0    50   ~ 0
 Q
 Text Label 4950 4800 0    50   ~ 0
 Q'
-Wire Wire Line
-	1850 1250 1850 1500
-Wire Wire Line
-	1600 1050 2000 1050
 Wire Wire Line
 	7000 3900 6800 3900
 Wire Wire Line
@@ -777,4 +688,385 @@ Wire Wire Line
 	1150 6750 1050 6750
 Wire Wire Line
 	1050 6750 1050 6850
+NoConn ~ 1250 4000
+NoConn ~ 1250 4100
+Text Label 1250 4300 0    50   ~ 0
+TX1
+Text Label 1250 4400 0    50   ~ 0
+RX1
+$Comp
+L controlBoard-rescue:GND-power #PWR06
+U 1 1 6197312B
+P 1400 4550
+F 0 "#PWR06" H 1400 4300 50  0001 C CNN
+F 1 "GND" H 1405 4377 50  0000 C CNN
+F 2 "" H 1400 4550 50  0001 C CNN
+F 3 "" H 1400 4550 50  0001 C CNN
+	1    1400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4500 1400 4550
+Wire Wire Line
+	1250 4500 1400 4500
+Wire Wire Line
+	1250 4300 1400 4300
+Wire Wire Line
+	1250 4400 1400 4400
+$Comp
+L controlBoard-rescue:Conn_01x06-Connector_Generic J3
+U 1 1 61962843
+P 1050 4200
+F 0 "J3" H 968 4617 50  0000 C CNN
+F 1 "Fingerprint" H 968 4526 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 1050 4200 50  0001 C CNN
+F 3 "~" H 1050 4200 50  0001 C CNN
+	1    1050 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3800 1750 3800
+Wire Wire Line
+	1650 3900 1650 3800
+$Comp
+L power:GND #PWR0101
+U 1 1 61D2442D
+P 1650 3900
+F 0 "#PWR0101" H 1650 3650 50  0001 C CNN
+F 1 "GND" H 1655 3727 50  0000 C CNN
+F 2 "" H 1650 3900 50  0001 C CNN
+F 3 "" H 1650 3900 50  0001 C CNN
+	1    1650 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 4000
+Wire Wire Line
+	2900 4200 2900 4000
+Wire Wire Line
+	2750 4200 2900 4200
+$Comp
+L AP2112K-3.3TRG1:AP2112K-3.3TRG1 U3
+U 1 1 61D04D1B
+P 2250 4000
+F 0 "U3" H 2250 3530 50  0000 C CNN
+F 1 "AP2112K-3.3TRG1" H 2250 3621 50  0000 C CNN
+F 2 "SOT95P285X140-5N" H 2250 4000 50  0001 L BNN
+F 3 "" H 2250 4000 50  0001 L BNN
+F 4 "2-2" H 2250 4000 50  0001 L BNN "PARTREV"
+F 5 "Diodes Inc." H 2250 4000 50  0001 L BNN "MANUFACTURER"
+	1    2250 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4000 2900 4000
+Wire Wire Line
+	2900 4000 2900 3950
+$Comp
+L controlBoard-rescue:+5V-power #PWR05
+U 1 1 61973A8E
+P 2900 3950
+F 0 "#PWR05" H 2900 3800 50  0001 C CNN
+F 1 "+5V" H 2915 4123 50  0000 C CNN
+F 2 "" H 2900 3950 50  0001 C CNN
+F 3 "" H 2900 3950 50  0001 C CNN
+	1    2900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J4
+U 1 1 61D317CF
+P 1250 1500
+F 0 "J4" H 1307 1817 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1307 1726 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1300 1460 50  0001 C CNN
+F 3 "~" H 1300 1460 50  0001 C CNN
+	1    1250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61D217E8
+P 6900 2800
+F 0 "R2" H 6959 2846 50  0000 L CNN
+F 1 "4k7" H 6959 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6900 2800 50  0001 C CNN
+F 3 "~" H 6900 2800 50  0001 C CNN
+	1    6900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61D2265C
+P 6600 2800
+F 0 "R1" H 6659 2846 50  0000 L CNN
+F 1 "4k7" H 6659 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6600 2800 50  0001 C CNN
+F 3 "~" H 6600 2800 50  0001 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3000 6600 3000
+Wire Wire Line
+	6400 3100 6900 3100
+Wire Wire Line
+	6600 2900 6600 3000
+Connection ~ 6600 3000
+Wire Wire Line
+	6600 3000 7000 3000
+Wire Wire Line
+	6900 2900 6900 3100
+Connection ~ 6900 3100
+Wire Wire Line
+	6900 3100 7000 3100
+Wire Wire Line
+	6600 2700 6600 2600
+Wire Wire Line
+	6600 2600 6750 2600
+Wire Wire Line
+	6900 2700 6900 2600
+Connection ~ 6750 2600
+Wire Wire Line
+	6750 2600 6900 2600
+$Comp
+L power:+5V #PWR010
+U 1 1 61D4D7E3
+P 6750 2300
+F 0 "#PWR010" H 6750 2150 50  0001 C CNN
+F 1 "+5V" H 6765 2473 50  0000 C CNN
+F 2 "" H 6750 2300 50  0001 C CNN
+F 3 "" H 6750 2300 50  0001 C CNN
+	1    6750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1600 1750 1600
+Wire Wire Line
+	1750 1600 1750 1700
+Wire Wire Line
+	1550 1400 1750 1400
+Wire Wire Line
+	1750 1400 1750 1300
+$Comp
+L Device:CP1_Small C7
+U 1 1 61D82C96
+P 1950 1500
+F 0 "C7" H 2041 1546 50  0000 L CNN
+F 1 "47u" H 2041 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 1950 1500 50  0001 C CNN
+F 3 "~" H 1950 1500 50  0001 C CNN
+	1    1950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C8
+U 1 1 61D83EAE
+P 2450 1500
+F 0 "C8" H 2541 1546 50  0000 L CNN
+F 1 "47u" H 2541 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 2450 1500 50  0001 C CNN
+F 3 "~" H 2450 1500 50  0001 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR02
+U 1 1 61D8A18A
+P 1750 850
+F 0 "#PWR02" H 1750 700 50  0001 C CNN
+F 1 "+5VA" H 1765 1023 50  0000 C CNN
+F 2 "" H 1750 850 50  0001 C CNN
+F 3 "" H 1750 850 50  0001 C CNN
+	1    1750 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR01
+U 1 1 61D8AA03
+P 1700 3300
+F 0 "#PWR01" H 1700 3150 50  0001 C CNN
+F 1 "+5VA" H 1715 3473 50  0000 C CNN
+F 2 "" H 1700 3300 50  0001 C CNN
+F 3 "" H 1700 3300 50  0001 C CNN
+	1    1700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3400 1700 3300
+Wire Wire Line
+	1950 1300 1950 1400
+Connection ~ 1750 1300
+Wire Wire Line
+	1750 1700 1950 1700
+Wire Wire Line
+	1950 1700 1950 1600
+Connection ~ 1750 1700
+Wire Wire Line
+	1750 1700 1750 1800
+Wire Wire Line
+	1950 1700 2450 1700
+Wire Wire Line
+	2450 1700 2450 1600
+Connection ~ 1950 1700
+Wire Wire Line
+	2450 1400 2450 1300
+$Comp
+L Device:D_Schottky D1
+U 1 1 61DE641F
+P 2200 1300
+F 0 "D1" H 2200 1083 50  0000 C CNN
+F 1 "D_Schottky" H 2200 1174 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 2200 1300 50  0001 C CNN
+F 3 "~" H 2200 1300 50  0001 C CNN
+	1    2200 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 1300 1950 1300
+Wire Wire Line
+	1950 1300 2050 1300
+Connection ~ 1950 1300
+Wire Wire Line
+	2350 1300 2450 1300
+$Comp
+L Device:LED D2
+U 1 1 61E5B5BC
+P 5400 2700
+F 0 "D2" H 5393 2445 50  0000 C CNN
+F 1 "LED" H 5393 2536 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5400 2700 50  0001 C CNN
+F 3 "~" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 61E5C904
+P 5150 2900
+F 0 "R4" H 5209 2946 50  0000 L CNN
+F 1 "1k" H 5209 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5150 2900 50  0001 C CNN
+F 3 "~" H 5150 2900 50  0001 C CNN
+	1    5150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3100 5150 3000
+Wire Wire Line
+	4800 3100 5150 3100
+Wire Wire Line
+	5150 2800 5150 2700
+Wire Wire Line
+	5150 2700 5250 2700
+Wire Wire Line
+	5550 2700 5850 2700
+Wire Wire Line
+	5850 2700 5850 3050
+Connection ~ 5850 3050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61EC2856
+P 6600 2500
+F 0 "TP?" H 6658 2618 50  0000 L CNN
+F 1 "SCL" H 6658 2527 50  0000 L CNN
+F 2 "" H 6800 2500 50  0001 C CNN
+F 3 "~" H 6800 2500 50  0001 C CNN
+	1    6600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61EC30C0
+P 6900 2500
+F 0 "TP?" H 6958 2618 50  0000 L CNN
+F 1 "SDA" H 6958 2527 50  0000 L CNN
+F 2 "" H 7100 2500 50  0001 C CNN
+F 3 "~" H 7100 2500 50  0001 C CNN
+	1    6900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2600 6600 2500
+Wire Wire Line
+	6900 2600 6900 2500
+Connection ~ 6900 2600
+Connection ~ 6600 2600
+Wire Wire Line
+	6750 2300 6750 2600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61EEF000
+P 1300 3150
+F 0 "TP?" H 1358 3268 50  0000 L CNN
+F 1 "PWM" H 1358 3177 50  0000 L CNN
+F 2 "" H 1500 3150 50  0001 C CNN
+F 3 "~" H 1500 3150 50  0001 C CNN
+	1    1300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3150 1300 3300
+Connection ~ 1300 3300
+Wire Wire Line
+	1300 3300 1550 3300
+Wire Wire Line
+	1250 4200 1400 4200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61F0455A
+P 1400 4100
+F 0 "#PWR?" H 1400 3950 50  0001 C CNN
+F 1 "+3V3" H 1415 4273 50  0000 C CNN
+F 2 "" H 1400 4100 50  0001 C CNN
+F 3 "" H 1400 4100 50  0001 C CNN
+	1    1400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4200 1400 4100
+Connection ~ 1400 4200
+Wire Wire Line
+	1400 4200 1650 4200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61F0C137
+P 1650 4300
+F 0 "TP?" H 1592 4326 50  0000 R CNN
+F 1 "3V3" H 1592 4417 50  0000 R CNN
+F 2 "" H 1850 4300 50  0001 C CNN
+F 3 "~" H 1850 4300 50  0001 C CNN
+	1    1650 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 4300 1650 4200
+Connection ~ 1650 4200
+Wire Wire Line
+	1650 4200 1750 4200
+$Comp
+L controlBoard-rescue:SolderJumper_2_Open-Jumper JP?
+U 1 1 61F13F18
+P 2200 950
+F 0 "JP?" H 2200 1155 50  0000 C CNN
+F 1 "JVCC" H 2200 1064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2200 950 50  0001 C CNN
+F 3 "~" H 2200 950 50  0001 C CNN
+	1    2200 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 850  1750 950 
+Wire Wire Line
+	2050 950  1750 950 
+Connection ~ 1750 950 
+Wire Wire Line
+	1750 950  1750 1300
+Wire Wire Line
+	2450 850  2450 950 
+Connection ~ 2450 1300
+Wire Wire Line
+	2350 950  2450 950 
+Connection ~ 2450 950 
+Wire Wire Line
+	2450 950  2450 1300
 $EndSCHEMATC

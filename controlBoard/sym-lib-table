@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name controlBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/controlBoard-rescue.lib)(options "")(descr ""))
+  (lib (name bidpl)(type Legacy)(uri ${KIPRJMOD}/bidpl.lib)(options "")(descr ""))
+  (lib (name AP2112K-3.3TRG1)(type Legacy)(uri ${KIPRJMOD}/AP2112K-3.3TRG1/AP2112K-3.3TRG1.lib)(options "")(descr ""))
 )
