@@ -381,17 +381,6 @@ F 3 "~" H 1000 3400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L controlBoard-rescue:GND-power #PWR011
-U 1 1 618F500B
-P 1750 1800
-F 0 "#PWR011" H 1750 1550 50  0001 C CNN
-F 1 "GND" H 1755 1627 50  0000 C CNN
-F 2 "" H 1750 1800 50  0001 C CNN
-F 3 "" H 1750 1800 50  0001 C CNN
-	1    1750 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L controlBoard-rescue:+5V-power #PWR012
 U 1 1 619089DF
 P 2450 850
@@ -482,46 +471,6 @@ TX1
 Text Label 4850 4600 0    50   ~ 0
 RX1
 $Comp
-L controlBoard-rescue:GND-power #PWR03
-U 1 1 6199143D
-P 1300 2750
-F 0 "#PWR03" H 1300 2500 50  0001 C CNN
-F 1 "GND" H 1305 2577 50  0000 C CNN
-F 2 "" H 1300 2750 50  0001 C CNN
-F 3 "" H 1300 2750 50  0001 C CNN
-	1    1300 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 2700 1300 2700
-Wire Wire Line
-	1300 2700 1300 2750
-Wire Wire Line
-	1250 2300 1400 2300
-Wire Wire Line
-	1250 2400 1400 2400
-Text Label 1300 2300 0    50   ~ 0
-TX
-Text Label 1300 2400 0    50   ~ 0
-RX
-$Comp
-L controlBoard-rescue:+5V-power #PWR09
-U 1 1 6199F7F4
-P 1750 2450
-F 0 "#PWR09" H 1750 2300 50  0001 C CNN
-F 1 "+5V" H 1765 2623 50  0000 C CNN
-F 2 "" H 1750 2450 50  0001 C CNN
-F 3 "" H 1750 2450 50  0001 C CNN
-	1    1750 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 2600 1400 2600
-Text Label 1650 2200 0    50   ~ 0
-RESET
-Wire Wire Line
-	1600 2200 1900 2200
-$Comp
 L controlBoard-rescue:C_Small-device C6
 U 1 1 618FF053
 P 8400 2650
@@ -608,36 +557,6 @@ F 3 "" H 7400 4400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L controlBoard-rescue:SolderJumper_2_Open-Jumper JP1
-U 1 1 61BD91B4
-P 1550 2500
-F 0 "JP1" H 1550 2705 50  0000 C CNN
-F 1 "JVCC" H 1550 2614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1550 2500 50  0001 C CNN
-F 3 "~" H 1550 2500 50  0001 C CNN
-	1    1550 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 2500 1400 2500
-$Comp
-L controlBoard-rescue:C_Small-Device C1
-U 1 1 61BF76F9
-P 1500 2200
-F 0 "C1" V 1271 2200 50  0000 C CNN
-F 1 "100n" V 1362 2200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1500 2200 50  0001 C CNN
-F 3 "~" H 1500 2200 50  0001 C CNN
-	1    1500 2200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 2200 1250 2200
-Wire Wire Line
-	1700 2500 1750 2500
-Wire Wire Line
-	1750 2500 1750 2450
-$Comp
 L controlBoard-rescue:C_Small-Device C2
 U 1 1 61C0D1ED
 P 3400 2600
@@ -665,17 +584,6 @@ Wire Wire Line
 	3500 2600 3600 2600
 Wire Wire Line
 	3200 2600 3300 2600
-$Comp
-L controlBoard-rescue:Conn_01x06-Connector_Generic J1
-U 1 1 618EBBB2
-P 1050 2500
-F 0 "J1" H 968 1975 50  0000 C CNN
-F 1 "FTDI" H 968 2066 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1050 2500 50  0001 C CNN
-F 3 "~" H 1050 2500 50  0001 C CNN
-	1    1050 2500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1550 6750 1900 6750
 Wire Wire Line
@@ -697,18 +605,14 @@ RX1
 $Comp
 L controlBoard-rescue:GND-power #PWR06
 U 1 1 6197312B
-P 1400 4550
-F 0 "#PWR06" H 1400 4300 50  0001 C CNN
-F 1 "GND" H 1405 4377 50  0000 C CNN
-F 2 "" H 1400 4550 50  0001 C CNN
-F 3 "" H 1400 4550 50  0001 C CNN
-	1    1400 4550
+P 1500 4750
+F 0 "#PWR06" H 1500 4500 50  0001 C CNN
+F 1 "GND" H 1505 4577 50  0000 C CNN
+F 2 "" H 1500 4750 50  0001 C CNN
+F 3 "" H 1500 4750 50  0001 C CNN
+	1    1500 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 4500 1400 4550
-Wire Wire Line
-	1250 4500 1400 4500
 Wire Wire Line
 	1250 4300 1400 4300
 Wire Wire Line
@@ -1007,7 +911,7 @@ Wire Wire Line
 	1400 4200 1400 4100
 Connection ~ 1400 4200
 Wire Wire Line
-	1400 4200 1650 4200
+	1400 4200 1500 4200
 $Comp
 L Connector:TestPoint TP2
 U 1 1 61F0C137
@@ -1073,4 +977,123 @@ Wire Wire Line
 Connection ~ 6450 3000
 Wire Wire Line
 	6450 3000 7050 3000
+$Comp
+L controlBoard-rescue:Conn_01x06-Connector_Generic J1
+U 1 1 618EBBB2
+P 1050 2500
+F 0 "J1" H 968 1975 50  0000 C CNN
+F 1 "FTDI" H 968 2066 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1050 2500 50  0001 C CNN
+F 3 "~" H 1050 2500 50  0001 C CNN
+	1    1050 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 2500 1750 2450
+Wire Wire Line
+	1700 2500 1750 2500
+Wire Wire Line
+	1400 2200 1250 2200
+$Comp
+L controlBoard-rescue:C_Small-Device C1
+U 1 1 61BF76F9
+P 1500 2200
+F 0 "C1" V 1271 2200 50  0000 C CNN
+F 1 "100n" V 1362 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1500 2200 50  0001 C CNN
+F 3 "~" H 1500 2200 50  0001 C CNN
+	1    1500 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 2500 1400 2500
+$Comp
+L controlBoard-rescue:SolderJumper_2_Open-Jumper JP1
+U 1 1 61BD91B4
+P 1550 2500
+F 0 "JP1" H 1550 2705 50  0000 C CNN
+F 1 "JVCC" H 1550 2614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1550 2500 50  0001 C CNN
+F 3 "~" H 1550 2500 50  0001 C CNN
+	1    1550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2200 1900 2200
+Text Label 1650 2200 0    50   ~ 0
+RESET
+Wire Wire Line
+	1250 2600 1400 2600
+$Comp
+L controlBoard-rescue:+5V-power #PWR09
+U 1 1 6199F7F4
+P 1750 2450
+F 0 "#PWR09" H 1750 2300 50  0001 C CNN
+F 1 "+5V" H 1765 2623 50  0000 C CNN
+F 2 "" H 1750 2450 50  0001 C CNN
+F 3 "" H 1750 2450 50  0001 C CNN
+	1    1750 2450
+	1    0    0    -1  
+$EndComp
+Text Label 1300 2400 0    50   ~ 0
+RX
+Text Label 1300 2300 0    50   ~ 0
+TX
+Wire Wire Line
+	1250 2400 1400 2400
+Wire Wire Line
+	1250 2300 1400 2300
+Wire Wire Line
+	1300 2700 1300 2750
+Wire Wire Line
+	1250 2700 1300 2700
+$Comp
+L controlBoard-rescue:GND-power #PWR03
+U 1 1 6199143D
+P 1300 2750
+F 0 "#PWR03" H 1300 2500 50  0001 C CNN
+F 1 "GND" H 1305 2577 50  0000 C CNN
+F 2 "" H 1300 2750 50  0001 C CNN
+F 3 "" H 1300 2750 50  0001 C CNN
+	1    1300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L controlBoard-rescue:GND-power #PWR011
+U 1 1 618F500B
+P 1750 1800
+F 0 "#PWR011" H 1750 1550 50  0001 C CNN
+F 1 "GND" H 1755 1627 50  0000 C CNN
+F 2 "" H 1750 1800 50  0001 C CNN
+F 3 "" H 1750 1800 50  0001 C CNN
+	1    1750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 61DF6837
+P 1500 4400
+F 0 "C9" H 1592 4446 50  0000 L CNN
+F 1 "100n" H 1592 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1500 4400 50  0001 C CNN
+F 3 "~" H 1500 4400 50  0001 C CNN
+	1    1500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4500 1500 4650
+Wire Wire Line
+	1250 4500 1350 4500
+Wire Wire Line
+	1350 4500 1350 4650
+Wire Wire Line
+	1350 4650 1500 4650
+Connection ~ 1500 4650
+Wire Wire Line
+	1500 4650 1500 4750
+Wire Wire Line
+	1500 4300 1500 4200
+Connection ~ 1500 4200
+Wire Wire Line
+	1500 4200 1650 4200
 $EndSCHEMATC
