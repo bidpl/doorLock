@@ -885,7 +885,7 @@
     (descr "DC Barrel Jack")
     (tags "Power Jack")
     (path /61D317CF)
-    (fp_text reference 5Vin (at -7.5 6.25) (layer F.SilkS)
+    (fp_text reference +5V (at -7.5 6.25) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Barrel_Jack_Switch (at -6.2 -5.5) (layer F.Fab)
