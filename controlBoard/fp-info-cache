@@ -1,4 +1,11 @@
-19214447491232883
+19407921006819989
+AP2112K-3
+SOT95P285X140-5N
+
+
+0
+5
+5
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83023,13 +83030,6 @@ Varistor
 RV_Disc_D21.5mm_W11.4mm_P10mm
 Varistor, diameter 21.5mm, width 11.4mm, pitch 10mm
 varistor SIOV
-0
-2
-2
-bidpl
-SMD_Pushbutton_3mmx4mm
-
-
 0
 2
 2

@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.12)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10)-1")
 
   (general
     (thickness 1.6)
@@ -255,6 +255,11 @@
       (net 2 GND))
     (pad 1 smd roundrect (at -1.185 -0.95 90) (size 1.35 0.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.1)
       (net 1 +5V))
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder (layer F.Cu) (tedit 5F68FEEF) (tstamp 61DE75F9)
@@ -932,6 +937,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Connector_BarrelJack.3dshapes/BarrelJack_CUI_PJ-063AH_Horizontal.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module bidpl:SMD_Pushbutton_3mmx4mm (layer F.Cu) (tedit 61BA88DD) (tstamp 61BB8D41)
@@ -957,6 +967,11 @@
       (net 5 /RESET))
     (pad 2 smd rect (at 2.075 0) (size 1.35 2) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical (layer F.Cu) (tedit 5B7745C2) (tstamp 61BB9FBF)
@@ -1110,6 +1125,11 @@
       (net 2 GND))
     (pad 2 smd rect (at 2.075 0 180) (size 1.35 2) (layers F.Cu F.Paste F.Mask)
       (net 4 /Q'))
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module bidpl:SMD_Pushbutton_3mmx4mm (layer F.Cu) (tedit 61BA88DD) (tstamp 61BB9544)
@@ -1135,6 +1155,11 @@
       (net 3 /Q))
     (pad 1 smd rect (at -2.075 0) (size 1.35 2) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 6197503B)
@@ -1225,6 +1250,11 @@
     (pad 1 smd rect (at -2.6 0) (size 3.5 2.4) (layers F.Cu F.Paste F.Mask)
       (net 16 /XTAL+))
     (model ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_0603-4Pin_6.0x3.5mm.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
